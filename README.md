@@ -1,2 +1,3 @@
-# marinda-me-landing-page
-Landing page for marinda.me
+# marinda-s.github.io
+
+> Simple HTML landing page for marinda-s.github.io / marinda.me
