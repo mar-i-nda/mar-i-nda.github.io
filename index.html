@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marinda: Contract Frontend Developer for hire</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            background: #F0FCA2;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        html {
+            font-size: 62.5%;
+            /* font-size 1em = 10px on default browser settings */
+        }
+
+        body {
+            font-size: 1.4rem;
+            font-family: 'Ubuntu Mono', monospace;
+            display: flex;
+            justify-content: center;
+
+            background-image: radial-gradient(50% 95%, #14364C 1%, #0D2839 96%);
+        }
+
+        @media (min-width: 640px) {
+            body {
+                align-items: center;
+            }
+        }
+
+        .page-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 620px;
+        }
+
+        .hero {
+            flex: 1;
+            width: 100%;
+            max-width: 312px;
+            padding-top: 10%;
+            max-height: 420px;
+        }
+
+        @media (min-width: 640px) {
+            .hero {
+                padding-bottom: 10%;
+            }
+        }
+
+        .hero>img {
+            width: 100%;
+            height: auto;
+            box-shadow: 2px 2px 10px 0 #00060A;
+            border-radius: 50%;
+        }
+
+        .content {
+            flex: 2 1 300px;
+            font-size: 2.4rem;
+            color: #F8F8F2;
+            letter-spacing: 0;
+            line-height: 37px;
+            text-shadow: 0 2px 4px #000507;
+            padding: 10%;
+        }
+
+        @media (min-width: 640px) {
+            .content {
+                padding: 0;
+            }
+        }
+
+        a {
+            position: relative;
+            text-decoration: none;
+            transition: all .5s ease-out;
+        }
+
+        a:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: currentColor;
+            transition: width .25s cubic-bezier(.22, .68, 0, 1.71);
+            will-change: width;
+        }
+
+        a:hover:before,
+        a:focus:before,
+        a:active:before {
+            width: 100%;
+        }
+
+        a[href^="https://codepen.io/"] {
+            color: #8AD6F2
+        }
+
+        a[href^="https://github.com/"] {
+            color: #FF9DD1
+        }
+
+        a[href^="mailto"] {
+            color: #90E89D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page-wrapper">
+        <div class="hero">
+            <img srcset="marinda@1x.png,
+                marinda@2x.png 2x" src="marinda@1x.png" alt="Pixel avatar image">
+        </div>
+        <div class="content">
+            <p>Hiya, I’m Marinda. I work as a contract User Interface Developer (remotely or in London). I have +10 years experience
+                crafting web UI's.</p>
+            <p>Not much going on here at the moment, but do checkout my
+                <a href="https://github.com/marinda-s">github</a> and
+                <a href="https://codepen.io/marinda-s">codepen</a> profiles for work samples. </p>
+            <p>Interested in hiring me? Need more work samples?
+                <a href="mailto:hello@marinda.me" target="_blank">Get in touch</a>.</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
