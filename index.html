@@ -1,152 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marinda: Contract Frontend Developer for hire</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Freelance senior User Interface developer based in Amsterdam."
+    />
+    <title>Hiya, I’m Marinda</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="//fonts.googleapis.com/css?family=Dancing+Script|Raleway"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        ::selection {
-            background: #F0FCA2;
-        }
+      ::selection {
+        background: #fb9504;
+        color: white;
+      }
 
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
 
-        html {
-            font-size: 62.5%;
-            /* font-size 1em = 10px on default browser settings */
-        }
+      html {
+        font-size: 62.5%;
+      }
 
-        body {
-            font-size: 1.4rem;
-            font-family: 'Ubuntu Mono', monospace;
-            display: flex;
-            justify-content: center;
+      body {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Raleway-Regular", sans-serif;
+        color: #111;
+      }
 
-            background-image: radial-gradient(50% 95%, #14364C 1%, #0D2839 96%);
-        }
+      .content {
+        margin-top: -10vh;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10%;
+      }
 
-        @media (min-width: 640px) {
-            body {
-                align-items: center;
-            }
-        }
-
-        .page-wrapper {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 620px;
-        }
-
-        .hero {
-            flex: 1;
-            width: 100%;
-            max-width: 312px;
-            padding-top: 10%;
-            max-height: 420px;
-        }
-
-        @media (min-width: 640px) {
-            .hero {
-                padding-bottom: 10%;
-            }
-        }
-
-        .hero>img {
-            width: 100%;
-            height: auto;
-            box-shadow: 2px 2px 10px 0 #00060A;
-            border-radius: 50%;
-        }
-
+      @media (min-width: 640px) {
         .content {
-            flex: 2 1 300px;
-            font-size: 2.4rem;
-            color: #F8F8F2;
-            letter-spacing: 0;
-            line-height: 37px;
-            text-shadow: 0 2px 4px #000507;
-            padding: 10%;
+          padding: 0;
         }
+      }
 
-        @media (min-width: 640px) {
-            .content {
-                padding: 0;
-            }
-        }
+      .title {
+        font-family: "Raleway-Regular";
+        font-weight: normal;
+        font-size: 2.8rem;
+      }
 
-        a:link, a:visited {
-            position: relative;
-            text-decoration: none;
-            transition: all .5s ease-out;
-        }
+      .blockquote {
+        font-family: "Dancing Script", cursive;
+        font-style: normal;
+        font-size: 2.4rem;
+        text-align: center;
+      }
 
-        a:before {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: currentColor;
-            transition: width .25s cubic-bezier(.22, .68, 0, 1.71);
-            will-change: width;
-        }
+      .links {
+        padding-top: 4%;
+      }
 
-        a:hover:before,
-        a:focus:before,
-        a:active:before {
-            width: 100%;
-        }
+      a:link,
+      a:visited {
+        position: relative;
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        margin-right: 20px;
+        color: inherit;
+      }
 
-        a[href^="//codepen.io/"] {
-            color: #8AD6F2;
-        }
+      a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: -10%;
+        width: 120%;
+        height: 3px;
+        background: currentColor;
+        transition: height 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: -1;
+        opacity: 0.7;
+      }
 
-        a[href^="//github.com/"] {
-            color: #FF9DD1;
-        }
+      a:hover:before,
+      a:focus:before,
+      a:active:before {
+        height: 150%;
+      }
 
-        a[href^="mailto"] {
-            color: #90E89D;
-        }
+      a[href^="//codepen.io/"]:before {
+        background: #ec76bd;
+      }
+
+      a[href^="//github.com/"]:before {
+        background: #95ceef;
+      }
+
+      a[href^="mailto"]:before {
+        background: #f0b96b;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+
+      a:last-child:after {
+        display: none;
+      }
+
+      a:after {
+        content: "::";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -16px;
+        width: auto;
+        height: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
+    <main class="content">
+      <h1 class="title">Hiya, I’m Marinda</h1>
 
-    <main class="page-wrapper">
-        <div class="hero">
-            <img srcset="marinda@1x.png,
-                marinda@2x.png 2x" src="marinda@1x.png" alt="Pixel avatar image">
-        </div>
-        <div class="content">
-            <p>Hiya, I’m Marinda, a contract User Interface Developer from South Africa living in London.</p>
-            <p>I’ve worked in the web industry for 10+ years on a range of projects, such as e-commerce sites, interactive ad
-                campaigns, web applications & most recently data visualisations.</p>
-            <p>Not much going on here yet, but do checkout my
-                <a href="//github.com/mariiinda">github</a> and
-                <a href="//codepen.io/mariiinda/">codepen</a> profiles. </p>
-            <p>Interested in hiring me? Need more work samples?
-                <a href="mailto:hello@marinda.me" target="_blank">Get in touch</a>.</p>
-        </div>
+      <blockquote class="blockquote">
+        I 💛 to make neat things with web technologies.
+      </blockquote>
+
+      <nav class="links">
+        <a href="//github.com/mariiinda" target="_blank" rel="noopener"
+          >github</a
+        >
+        <a href="//codepen.io/mariiinda/" target="_blank" rel="noopener"
+          >codepen</a
+        >
+        <a href="mailto:hello@marinda.me" target="_blank" rel="noopener"
+          >email</a
+        >
+      </nav>
     </main>
-
-</body>
-
+  </body>
 </html>
